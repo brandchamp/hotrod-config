@@ -1,7 +1,7 @@
 {
   "name": "hotrod-config",
   "version": "0.1.0",
-  "description": "Simple convention-based app configuration object based on yaml files, env vars and cmd line",
+  "description": "Configuration object based on yaml files, env vars and cmd line args (in that order)",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
