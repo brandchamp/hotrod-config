@@ -1,13 +1,24 @@
 hotrod-config
 =============
 
-Simple convention-based app configuration object based on yaml files, environment variables and
-command line args (in that order)
+Configuration object based on yaml files, environment variables and command line args (in that order)
    
 ## Install
 
 ```
 npm install hotrod-config
+```
+
+## Usage
+
+```js
+var path = require('path');
+var configDir = path.join(__dirname, 'config');
+
+var config = require('hotrod-config')(configDir);
+
+var foo = config.get('foo');
+var bar = config.getRequired('bar');  // throws if not present
 ```
 
 ## Overview
@@ -21,18 +32,6 @@ Uses the [nconf](https://github.com/indexzero/nconf) library reads settings from
 
 Later sources take precedence over earlier, so a command line arg will always override a setting of the same name 
 found elsewhere.
-
-## Usage
-
-```js
-var path = require('path');
-var configDir = path.join(__dirname, 'config');
-
-var config = require('hotrod-config')(configDir);
-
-var foo = config.get('foo');
-var bar = config.getRequired('bar');  // throws if not present
-```
 
 # License
 
