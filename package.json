@@ -1,0 +1,25 @@
+{
+  "name": "hotrod-config",
+  "version": "0.1.0",
+  "description": "Simple convention-based app configuration object based on yaml files, env vars and cmd line",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panoptix-za/hotrod-config.git"
+  },
+  "keywords": [
+    "hotrod",
+    "config",
+    "yaml",
+    "nconf"
+  ],
+  "author": "emertechie@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.3.1",
+    "nconf": "^0.7.2"
+  }
+}
